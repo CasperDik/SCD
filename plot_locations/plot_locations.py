@@ -18,7 +18,7 @@ def load_storage(filename):
 
 def plot_on_map(dataframe_emitters, dataframe_storage):
     m = folium.Map(location=[(dataframe_emitters["Latitude"].min() + dataframe_emitters["Latitude"].max()) / 2,
-                             (dataframe_emitters["Longitude"].min() + dataframe_emitters["Longitude"].max()) / 2], zoom_start=7,
+                             (dataframe_emitters["Longitude"].min() + dataframe_emitters["Longitude"].max()) / 2], zoom_start=6,
                    control_scale=True)
 
     for lat, long in zip(dataframe_emitters["Latitude"], dataframe_emitters["Longitude"]):
